@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tellock - Taqdimot</title>
+    <title>Tellock - Presentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        /* UMUMIY STILLAR */
+        /* GENERAL STYLES */
         * {
             margin: 0;
             padding: 0;
@@ -20,15 +20,13 @@
             font-family: 'Montserrat', sans-serif;
             background-color: #0a101f;
             color: #e0e0e0;
-            overflow: hidden; /* Sahifani aylantirishni o'chirish */
+            overflow: hidden; /* Disable body scroll */
         }
 
         .main-container {
             height: 100vh;
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
-            /* Silliq aylantirishni JS boshqargani uchun bu yerda kerak emas */
-            /* scroll-behavior: smooth; */
         }
 
         section {
@@ -54,14 +52,14 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Ikonkalar stili */
+        /* Icon Styles */
         .icon {
             font-size: 4rem;
             color: #00d1b2;
             margin-bottom: 25px;
         }
 
-        /* Matn stillari */
+        /* Text Styles (Adjusted sizes from your version) */
         h1 {
             font-size: 4.5rem;
             font-weight: 700;
@@ -92,7 +90,7 @@
             color: #a0a0a0;
         }
 
-        /* Maxsus elementlar */
+        /* Special Elements */
         .button {
             display: inline-block;
             background-color: #00d1b2;
@@ -120,7 +118,7 @@
             text-decoration: underline;
         }
 
-        /* YON TOMONDAGI NAVIGATSIYA */
+        /* SIDE NAVIGATION */
         .slide-nav {
             position: fixed;
             top: 50%;
@@ -129,7 +127,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            z-index: 100; /* Boshqa elementlar ustida turishi uchun */
+            z-index: 100;
         }
 
         .slide-nav a {
@@ -152,7 +150,7 @@
             transform: scale(1.4);
         }
 
-        /* Media query kichik ekranlar uchun */
+        /* Media query for smaller screens */
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             h2 { font-size: 2rem; }
@@ -179,104 +177,104 @@
     </nav>
 
     <div class="main-container">
-        <!-- 1. Kirish -->
+        <!-- 1. Intro -->
         <section id="slide-1">
             <div class="content">
                 <div class="icon"><i class="fas fa-shield-alt"></i></div>
                 <h1>Tellock</h1>
-                <p class="tagline">Raqamli Nazorat. Haqiqiy Xotirjamlik.</p>
-                <p>Biznes uchun tavakkalchiliklarni kamaytiramiz, foydalanuvchilar uchun esa xavfsizlikni ta'minlaymiz.</p>
+                <p class="tagline">Digital Control. Real Peace of Mind.</p>
+                <p>We minimize risks for businesses and provide security for users.</p>
             </div>
         </section>
 
-        <!-- 2. Muammo (Biznes Uchun) -->
+        <!-- 2. The Problem: For Business -->
         <section id="slide-2">
             <div class="content">
                 <div class="icon"><i class="fas fa-arrow-trend-down"></i></div>
-                <h2>Muammo: Biznes Uchun</h2>
-                <p>Muddatli to'lovdagi har <strong>5 ta</strong> qurilmadan <strong>1 tasining</strong> to'lovi kechikadi. Bu biznes uchun o'nlab, yuzlab million so'mlik "muzlatilgan" mablag' va doimiy bosh og'rig'i degani.</p>
+                <h2>The Problem: For Business</h2>
+                <p>Payments for <strong>1 out of every 5</strong> devices on installment plans are delayed. This means frozen funds and a constant headache for businesses.</p>
             </div>
         </section>
 
-        <!-- 3. Muammo (Foydalanuvchi Uchun) -->
+        <!-- 3. The Problem: For Users -->
         <section id="slide-3">
             <div class="content">
                 <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
-                <h2>Muammo: Foydalanuvchi Uchun</h2>
-                <p>Yo'qotilgan yoki o'g'irlangan telefon — bu shunchaki qurilma emas. Bu sizning bank kartalaringiz, shaxsiy yozishmalaringiz, suratlaringiz va butun raqamli hayotingizga ochilgan eshikdir.</p>
+                <h2>The Problem: For Users</h2>
+                <p>A lost or stolen phone isn't just a device. It's an open door to your bank cards, personal messages, photos, and your entire digital life.</p>
             </div>
         </section>
 
-        <!-- 4. Yechim: Tellock -->
+        <!-- 4. The Solution: Tellock -->
         <section id="slide-4">
             <div class="content">
                 <div class="icon"><i class="fas fa-key"></i></div>
-                <h2>Yechim: Ikkita Yo'l — Yagona Maqsad</h2>
-                <p>Tellock <strong>Android</strong> qurilmalar uchun ikki xil himoya usulini taklif qiladi:</p>
-                <p><strong>1. Biznes uchun:</strong> Muddatli to'lovdagi qurilmalarni masofadan boshqarish va nazorat qilish.<br>
-                   <strong>2. Shaxsan siz uchun:</strong> Istalgan kishi o'z telefonini o'g'rilik va yo'qotishdan himoya qilish uchun mustaqil ro'yxatdan o'tishi mumkin.</p>
+                <h2>The Solution: Two Paths, One Goal</h2>
+                <p>Tellock offers two protection methods for <strong>Android</strong> devices:</p>
+                <p><strong>1. For Business:</strong> Remotely manage and control devices sold on installment plans.<br>
+                   <strong>2. For You:</strong> Anyone can register independently to protect their phone from theft and loss.</p>
             </div>
         </section>
 
-        <!-- 5. Qanday Ishlaydi? -->
+        <!-- 5. How It Works -->
         <section id="slide-5">
             <div class="content">
                 <div class="icon"><i class="fas fa-cogs"></i></div>
-                <h2>Qanday Ishlaydi?</h2>
-                <p><strong>A) Biznes orqali:</strong> Do'kon qurilmani tizimga qo'shadi. Shartnoma tugagach, boshqaruv bir tugma bilan sizga o'tadi.</p>
-                <p><strong>B) Mustaqil ro'yxatdan o'tish:</strong> Tellock saytidan ro'yxatdan o'tasiz, APK faylni yuklaysiz va telefoningizni darhol o'zingiz himoya qilasiz.</p>
+                <h2>How It Works</h2>
+                <p><strong>A) Through Business:</strong> A store adds the device to the system. After the contract ends, control is transferred to you with one click.</p>
+                <p><strong>B) Independent Registration:</strong> Register on the Tellock site, download the APK, and immediately protect your phone yourself.</p>
             </div>
         </section>
         
-        <!-- 6. Bozor Imkoniyatlari -->
+        <!-- 6. Market Opportunity -->
         <section id="slide-6">
             <div class="content">
                 <div class="icon"><i class="fas fa-rocket"></i></div>
-                <h2>Bozor Imkoniyatlari</h2>
-                <p>Statistika agentligi ma'lumotlariga ko'ra, 2024-yilning 11 oyida O'zbekistonga <strong>3.8 million</strong> dona mobil telefon import qilingan. Bu bozorning muhim qismi muddatli to'lov hissasiga to'g'ri keladi.</p>
-                <a href="https://kun.uz/news/2024/12/29/2024-yil-yanvar-noyabr-oylarida-ozbekistonga-olib-kirilgan-mobil-telefonlar-soni-malum-qilindi" target="_blank" class="source-link">(manba: kun.uz)</a>
+                <h2>Market Opportunity</h2>
+                <p>According to the Statistics Agency, <strong>3.8 million</strong> mobile phones were imported into Uzbekistan in the first 11 months of 2024. A significant portion of this market is based on installment plans.</p>
+                <a href="https://kun.uz/news/2024/12/29/2024-yil-yanvar-noyabr-oylarida-ozbekistonga-olib-kirilgan-mobil-telefonlar-soni-malum-qilindi" target="_blank" class="source-link">(source: kun.uz)</a>
             </div>
         </section>
 
-        <!-- 7. Nega Aynan Tellock? -->
+        <!-- 7. Why Tellock? -->
         <section id="slide-7">
             <div class="content">
                 <div class="icon"><i class="fas fa-trophy"></i></div>
-                <h2>Nega Aynan Tellock?</h2>
-                <p><strong>Hayotiy Sikl Boshqaruvi:</strong> Qurilmaning biznes nazoratidan shaxsiy himoyaga uzluksiz o'tishini ta'minlaydigan yagona platformamiz.</p>
-                <p><strong>Mahalliy Bozor Uchun:</strong> Biz O'zbekiston bozorining talab va ehtiyojlarini chuqur anglagan holda ishlaymiz.</p>
+                <h2>Why Tellock?</h2>
+                <p><strong>Lifecycle Management:</strong> We are the only platform ensuring a seamless transition from business control to personal protection.</p>
+                <p><strong>For the Local Market:</strong> We operate with a deep understanding of the needs and demands of the Uzbekistan market.</p>
             </div>
         </section>
 
-        <!-- 8. Biznes Model -->
+        <!-- 8. Business Model -->
         <section id="slide-8">
             <div class="content">
                 <div class="icon"><i class="fas fa-hand-holding-dollar"></i></div>
-                <h2>Biznes Model</h2>
-                <p><strong>B2B (Biznes uchun):</strong> Tizimdagi har bir faol qurilma uchun oylik obuna to'lovi (SaaS).</p>
-                <p><strong>B2C (Foydalanuvchilar uchun):</strong> Kelajakda kengaytirilgan shaxsiy xavfsizlik funksiyalari uchun yillik Premium-obuna.</p>
+                <h2>Business Model</h2>
+                <p><strong>B2B (For Business):</strong> A monthly subscription fee for each active device in the system (SaaS).</p>
+                <p><strong>B2C (For Users):</strong> An annual premium subscription for advanced personal security features in the future.</p>
             </div>
         </section>
 
-        <!-- 9. "Yo'l Xaritasi" -->
+        <!-- 9. Roadmap -->
         <section id="slide-9">
             <div class="content">
                 <div class="icon"><i class="fas fa-road"></i></div>
-                <h2>"Yo'l Xaritasi" (Roadmap)</h2>
-                <p><strong>1-chorak:</strong> MVP ishga tushirish va Toshkentdagi 10 ta yirik do'kon bilan hamkorlik.</p>
-                <p><strong>2-chorak:</strong> Respublika bo'ylab hamkorlar sonini 50 taga yetkazish.</p>
-                <p><strong>3-chorak:</strong> Shaxsiy kabinet va B2C funksiyalarini to'liq ishga tushirish.</p>
-                <p><strong>4-chorak:</strong> CRM integratsiyalari va qo'shni bozorlarga chiqishni o'rganish.</p>
+                <h2>Roadmap</h2>
+                <p><strong>Q1:</strong> Launch MVP and partner with 10 major retailers in Tashkent.</p>
+                <p><strong>Q2:</strong> Expand partnerships to 50 retailers nationwide.</p>
+                <p><strong>Q3:</strong> Launch the personal account and full B2C features.</p>
+                <p><strong>Q4:</strong> Explore CRM integrations and expansion into neighboring markets.</p>
             </div>
         </section>
 
-        <!-- 10. Murojaat va JONLI DEMO -->
+        <!-- 10. The Ask & LIVE DEMO -->
         <section id="slide-10">
             <div class="content">
                 <div class="icon"><i class="fas fa-handshake"></i></div>
-                <h2>G'oyadan Reallikka</h2>
-                <p>Jamoani kengaytirish va marketing strategiyasini ishga tushirish uchun investitsiya izlamoqdamiz. Keling, tizim qanday ishlashini sizga hoziroq jonli ko'rsataman.</p>
-                <a href="#" class="button">JONLI DEMONSTRATSIYA</a>
+                <h2>From Idea to Reality</h2>
+                <p>We are seeking investment to expand our team and launch our marketing strategy. Let me show you how the system works right now.</p>
+                <a href="#" class="button">LIVE DEMO</a>
             </div>
         </section>
     </div>
@@ -287,7 +285,7 @@
             const navLinks = document.querySelectorAll('.slide-nav a');
             const mainContainer = document.querySelector('.main-container');
 
-            // 1. KUZATUVCHI: Foydalanuvchi scroll qilganda yon tugmani aktiv qilish uchun
+            // 1. OBSERVER: To highlight the active side-nav link on scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -309,7 +307,7 @@
                 observer.observe(section);
             });
 
-            // 2. BOSISH HODISASI (CLICK): Yon tugma bosilganda kerakli sectionga o'tish
+            // 2. CLICK EVENT: To scroll to the correct section when a side-nav link is clicked
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
